@@ -121,10 +121,13 @@ Buffer contains: `Do not keep this line`.
 
 **See the unsaved-change message**
 
+Read unsaved-change message, then press Enter to dismiss before continuing.
+
 Keys:
 
 ```text
 :q<Enter>
+<Enter>
 ```
 
 Buffer contains: `Do not keep this line`.
