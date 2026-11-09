@@ -1,6 +1,6 @@
 # Neovim 101 — edit real files
 
-Practice files for varCodeFather Back to Basics. Video in production; these files were rehearsed with Neovim 0.12.6 in a local Arch VM. No Docker daemon or AWS account needed for this editing lesson.
+Practice files for varCodeFather Back to Basics. [Watch tutorial](https://www.youtube.com/watch?v=RtN3W2qdQ1E). Tested with Neovim 0.12.6 in a local Arch VM. No Docker daemon or AWS account needed for this editing lesson.
 
 ## Start
 

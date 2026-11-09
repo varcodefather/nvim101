@@ -6,7 +6,7 @@ Learn to edit real files without a plugin setup. Practical tutorials from Back t
 | --- | --- |
 | 01 — Open, edit, undo, search, save and work across files | [Practice project and walkthrough](01-editing-files/README.md) |
 
-Video currently in production. Demo's 44 actionable scenes rehearsed using Neovim 0.12.6 in a local Arch VM; saved Compose and HTML files checked against expected results.
+[Watch tutorial](https://www.youtube.com/watch?v=RtN3W2qdQ1E). Tested with Neovim 0.12.6 in a local Arch VM; saved Compose and HTML files checked against supplied examples.
 
 ```bash
 git clone https://github.com/varcodefather/nvim101.git
