@@ -389,6 +389,38 @@ head -1 site/index.html
 grep -n 'Status:' notes.md
 ```
 
+### More saving and quitting options
+
+These examples follow the two-file/split-window section. `:q!` closes the current window without saving; `:qa!` quits all windows and abandons unsaved changes; `:wqa` writes changed files and quits all windows. Check save errors before assuming files were written.
+
+Open a new note:
+
+```bash
+nvim --clean save-one.txt
+```
+
+Type `i`, enter `First note to keep`, then Escape. Open the second note:
+
+```vim
+:vsplit save-two.txt
+```
+
+Type `i`, enter `Second note to keep`, then Escape. Both files now have unsaved changes. Type `:wqa`, read the command, then press Enter. Verify both saves:
+
+```bash
+cat save-one.txt
+cat save-two.txt
+```
+
+Reopen `save-one.txt`, press `Go`, add `Unwanted change one`, then Escape. Open `save-two.txt` with `:vsplit save-two.txt`, press `Go`, add `Unwanted change two`, then Escape. Type `:qa!`, read the command, then Enter to discard both unsaved additions.
+
+```bash
+cat save-one.txt
+cat save-two.txt
+```
+
+Expected: only `First note to keep` and `Second note to keep`; unwanted additions were not written. Website files remain unchanged by this exercise.
+
 ### 07 — A small configuration and a practical exercise
 
 **Set indentation for this session**
